@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useParams} from 'react-router-dom'
-import { Card, Button, Container, Row, Col} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Card, Button, Container, Row, Col } from 'react-bootstrap'
 
 const HomePage = () => {
-    const [posts, setPosts] = useState ([])
+    const [posts, setPosts] = useState([]) 
+// is this the error???????????/\/\
 
     useEffect(() => {
         const fetchPosts = async () => {

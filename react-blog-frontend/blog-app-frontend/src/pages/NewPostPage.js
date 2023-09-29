@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
-import { useNavigate} from 'react-router-dom'
-import { Form, Button, Container} from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
+import { Form, Button, Container } from 'react-bootstrap'
 
 const NewPostPage = () => {
 
@@ -9,7 +9,7 @@ const NewPostPage = () => {
         title: '',
         author: '',
         image: '',
-        content: '',
+        content: ''
     })
 
     const navigate = useNavigate()
@@ -48,4 +48,4 @@ const NewPostPage = () => {
     )
 }
 
-export default NewPostPage;
+export default NewPostPage()
